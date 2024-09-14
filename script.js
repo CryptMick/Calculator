@@ -17,16 +17,15 @@ function operate(opt, frt, scd) {
 // array to hold user inputs for arithmetic operation 
 let str = [];
 
+// allow keyboard input from user
+document.addEventListener("keypress", (event) => {
+    if(event.key === "1"|| event.key === "2" || event.key === "3" || event.key === "4" || event.key === "5" || event.key === "6" || event.key === "7" || event.key === "8" || event.key === "9" || event.key === "0") {
+        str.push(event.key);
+        input.value += event.key;
+}});
+
 // Display user's input
 function display (ele) {
-    // allow keyboard input
-    window.document.addEventListener("keypress", (event) => {
-        if(event.key === "1"|| event.key === "2" || event.key === "3" || event.key === "4" || event.key === "5" || event.key === "6" || event.key === "7" || event.key === "8" || event.key === "9" || event.key === "0") {
-            input.value += event.key;
-            console.log(event.key);
-            str.push(event.key);
-        }
-    });
     input.value += ele;
     str.push(ele);
 }
