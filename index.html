@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="cal-container">
+                <div class="cal-screen">
+                    <input type="text" class="view" readonly/>
+                </div>
+                <div class="buttons">
+                    <table>
+                    <tr>
+                        <td><button  id="AC">AC</button></td>
+                        <td><buttton id="del"><button>Delete</button></td>
+                        <td><button onclick="display('%')" class="operator" >%</button></td>
+                        <td><button onclick="display('/')" class="operator">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('7')" >7</button> </td>
+                        <td><button onclick="display('8')" >8</button> </td>
+                        <td><button onclick="display('9')" >9</button> </td>
+                        <td> <button onclick="display('*')" >*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('4')" >4</button></td>
+                        <td><button onclick="display('5')" >5</button></td>
+                        <td><button onclick="display('6')" >6</button></td>
+                        <td><button onclick="display('-')" >-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('1')" >1</button></td>
+                        <td><button onclick="display('2')" >2</button></td>
+                        <td><button onclick="display('3')" >3</button></td>
+                        <td><button onclick="display('+')" >+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="display('00')" >00</button></td>
+                        <td><button onclick="display('0')" >0</button></td>
+                        <td><button onclick="display('.')" >.</button></td>
+                        <td><button class="btn" class="operator" id="equal">=</button></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
