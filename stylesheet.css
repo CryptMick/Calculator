@@ -57,3 +57,6 @@ button{
     opacity: 1;
     background: rgb(3, 202, 237);
 }
+::placeholder{
+    color: #fff;
+}
